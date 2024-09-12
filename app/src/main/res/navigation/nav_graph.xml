@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.webinar20.MainFragment"
+        android:label="@string/main_label"
+        tools:layout="@layout/fragment_state_flow" />
+
+    <fragment
+        android:id="@+id/StateFlowFragment"
+        android:name="com.example.webinar20.state_flow.StateFlowFragment"
+        android:label="@string/state_flow_label"
+        tools:layout="@layout/fragment_state_flow"/>
+
+    <fragment
+        android:id="@+id/CallbackFragment"
+        android:name="com.example.webinar20.callback.CallbackFragment"
+        android:label="@string/callback_fragment_label"
+        tools:layout="@layout/fragment_shared_state">
+    </fragment>
+
+    <fragment
+        android:id="@+id/SharedStateFragment"
+        android:name="com.example.webinar20.shared_state.SharedStateFragment"
+        android:label="@string/shared_state_fragment_label"
+        tools:layout="@layout/fragment_shared_state">
+    </fragment>
+
+    <fragment
+        android:id="@+id/SomeFragment"
+        android:name="com.example.webinar20.coroutines_usage_example.presentation.SomeFragment"
+        android:label="@string/some_fragment_label"
+        tools:layout="@layout/fragment_some_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/FlowUsageFragment"
+        android:name="com.example.webinar20.flow_usage_example.presentation.FlowUsageFragment"
+        android:label="@string/flow_usage_fragment_label"
+        tools:layout="@layout/fragment_flow_usage">
+    </fragment>
+
+</navigation>
